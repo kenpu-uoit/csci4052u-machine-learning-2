@@ -1,0 +1,7 @@
+__pycache__/
+.ipynb_checkpoints/
+lightning_logs/
+
+# lab datasets are downloaded on first run
+*/data/
+labs/*/data/

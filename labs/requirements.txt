@@ -1,0 +1,13 @@
+# For running the labs on your own machine.  Google Colab needs none of this.
+#
+# These are loose bounds, not the exact pins the course uses: pick the torch
+# build that matches your own CUDA version, or the CPU build if you have no GPU.
+# See https://pytorch.org/get-started/locally/
+torch>=2.2
+torchvision>=0.17
+lightning>=2.2
+torchmetrics>=1.3
+numpy>=1.26
+matplotlib>=3.8
+jupyterlab>=4.2
+ipywidgets>=8.1
