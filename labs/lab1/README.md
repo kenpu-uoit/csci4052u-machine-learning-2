@@ -19,7 +19,7 @@ Build a shallow ReLU network from arithmetic and find its joints, derive least s
 |---|---|---|---|
 | 1 | A shallow ReLU network, by hand | 15 min | Implement the three-unit network with plain tensor arithmetic, locate its joints, and check a region's slope against the units active there. |
 | 2 | The loss recipe | 25 min | Write the Gaussian negative log-likelihood, fit the regression model with Lightning, then change only the distribution and fit MNIST-1D. |
-| 3 | Capacity, train error, and test error | 15 min | Sweep the hidden width on a small noisy training set and read bias, variance, and the noise floor off the resulting curves. |
+| 3 | Capacity, train error, and test error | 15 min | Sweep the hidden width on a small noisy training set, then compute bias, variance, and the noise floor from the resulting numbers. |
 
 ## Getting started
 
@@ -32,8 +32,7 @@ To run it on your own machine instead, see [../README.md](../README.md).
 
 ## What to submit
 
-The executed notebook, with every check printing `[ok]` and the written answers filled
-in.
+The executed notebook, with every check printing `[ok]`.
 
 ## Files
 

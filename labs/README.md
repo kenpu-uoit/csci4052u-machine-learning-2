@@ -39,5 +39,5 @@ GPU support; the CPU build is enough for every lab.
 
 ## What you submit
 
-The executed notebook, with every check printing `[ok]` and the written answers filled
-in. Your instructor will tell you where to hand it in.
+The executed notebook, with every check printing `[ok]`. Your instructor will tell you
+where to hand it in.

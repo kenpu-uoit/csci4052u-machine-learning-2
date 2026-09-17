@@ -21,7 +21,7 @@ Every notebook follows the same three-cell rhythm:
 
 - **SETUP** cells are provided. Run them and leave them alone.
 - **YOUR CODE** cells are yours. Each contains `raise NotImplementedError()` — delete
-  that line and write your answer.
+  that line and write the code.
 - **CHECK** cells verify what you wrote and print `[ok]` when it is right. When a check
   fails it tells you *what* is wrong, not merely *that* something is, so read the message
   before changing anything.

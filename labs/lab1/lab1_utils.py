@@ -452,3 +452,43 @@ def check_sweep(widths, train_errors, test_errors, noise_floor=None):
         print(f"      the noise floor is sigma^2 = {noise_floor:.4f}; "
               f"the best test error is {min(test_errors):.4f}.")
     print("      use these three numbers in your table.")
+
+
+def check_decomposition(widths, train_errors, test_errors, noise_floor,
+                        underfit_error, gap, best_width):
+    """Exercise 3c."""
+    import numpy as _np
+
+    i_small, i_large = int(_np.argmin(widths)), int(_np.argmax(widths))
+    want_underfit = train_errors[i_small]
+    want_gap = test_errors[i_large] - train_errors[i_large]
+    want_best = widths[int(_np.argmin(test_errors))]
+
+    check(
+        abs(float(underfit_error) - want_underfit) < 1e-6,
+        f"underfit_error is {float(underfit_error):.4f}, expected {want_underfit:.4f} "
+        f"-- the TRAIN error at the smallest width ({widths[i_small]}).",
+    )
+    check(
+        abs(float(gap) - want_gap) < 1e-6,
+        f"gap is {float(gap):.4f}, expected {want_gap:.4f} "
+        f"-- test minus train error at the largest width ({widths[i_large]}).",
+    )
+    check(
+        int(best_width) == want_best,
+        f"best_width is {int(best_width)}, expected {want_best} "
+        "-- the width at which TEST error is smallest.",
+    )
+    check(
+        min(test_errors) > noise_floor,
+        f"the best test error {min(test_errors):.4f} should sit above the noise floor "
+        f"{noise_floor:.4f}; no model can beat the floor.",
+    )
+    print("[ok] 3c: bias, variance and noise read off correctly.")
+    print(f"      bias   -> train error {want_underfit:.4f} at width {widths[i_small]}: "
+          "too inflexible to fit the data at all.")
+    print(f"      variance -> train/test gap {want_gap:.4f} at width {widths[i_large]}: "
+          "the extra capacity fits the sample, not the function.")
+    print(f"      noise  -> test error bottoms at {min(test_errors):.4f}, above the "
+          f"floor sigma^2 = {noise_floor:.4f}, which no model can cross.")
+    print(f"      test error is lowest at width {want_best}.")
