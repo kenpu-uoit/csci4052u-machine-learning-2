@@ -11,6 +11,7 @@ badge, then **Runtime → Run all**. Nothing to install, and no GPU required.
 | Lab | Topic | Duration | Open |
 |---|---|---|---|
 | [LAB1](labs/lab1/) | Shallow Networks, Losses, and Generalization | 1 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kenpu-uoit/csci4052u-machine-learning-2/blob/main/labs/lab1/lab1.ipynb) |
+| [LAB2](labs/lab2/) | Depth, Degradation, and Residual Connections | 1 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kenpu-uoit/csci4052u-machine-learning-2/blob/main/labs/lab2/lab2.ipynb) |
 
 See [labs/README.md](labs/README.md) for the local-install route and for how to save
 your work.
