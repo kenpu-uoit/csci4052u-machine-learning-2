@@ -69,6 +69,27 @@ than `CPU` in the setup cell.
 
 ---
 
+## If you have not used Ultralytics before
+
+The notebook opens with a five-minute primer — read it before Part 1. The short version:
+
+- **One class does everything.** `YOLO("yolov3-tinyu.pt")` is the network, the training
+  loop and the evaluator at once. Three verbs: `.predict()`, `.train()`, `.val()`.
+- **`predict` returns a list of `Results`**, one per image, each with `.boxes.cls`,
+  `.boxes.xyxy`, `.boxes.conf`, and a `.plot()` that draws them.
+- **`model.names` maps a class index to a name, and which names depends on the
+  checkpoint** — 80 for the COCO model, 4 after you fine-tune. Part 1 is mostly about
+  keeping those two vocabularies apart.
+- **A dataset is a YAML file**, not code. `data="african-wildlife.yaml"` is enough;
+  Ultralytics downloads it and reads the labels beside the images.
+- **Runs land in `runs/<name>/`** — `results.csv` for the per-epoch numbers,
+  `weights/best.pt` for the checkpoint.
+
+Every provided cell in the notebook is commented, and each **Your turn** cell opens with
+a few lines telling you what its steps are. You are not expected to guess the API.
+
+---
+
 ## How to do it, part by part
 
 ### Part 1 — What the pretrained detector already knows (20 marks)
