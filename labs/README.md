@@ -5,6 +5,7 @@
 | [LAB1](./lab1/) | Shallow Networks, Losses, and Generalization | `preliminaries_to_machine_learning`, `training_models` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kenpu-uoit/csci4052u-machine-learning-2/blob/main/labs/lab1/lab1.ipynb) |
 | [LAB2](./lab2/) | Depth, Degradation, and Residual Connections | `convnets` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kenpu-uoit/csci4052u-machine-learning-2/blob/main/labs/lab2/lab2.ipynb) |
 | [LAB3](./lab3/) | Running a Single-Shot Detector, and Measuring Where It Fails | `fast_object_detection_networks` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kenpu-uoit/csci4052u-machine-learning-2/blob/main/labs/lab3/lab3.ipynb) |
+| [LAB4](./lab4/) | Tokens, Masks and an Encoder Transformer | `chapter_12_transformers` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kenpu-uoit/csci4052u-machine-learning-2/blob/main/labs/lab4/lab4.ipynb) |
 
 ## Running a lab on Colab
 
