@@ -16,6 +16,46 @@ loop, the plotting and the checks; you supply the model and the loss.
 | `z_samples.pt` | 100 precomputed latent vectors, a 10×10 sweep of the plane |
 | `make_z_samples.py` | the script that wrote `z_samples.pt` |
 
+## Completing the notebook
+
+1. **Open it in Colab** with the badge above, then **File → Save a copy in Drive**
+   before doing any work. Colab discards an unsaved session.
+2. **Turn on a GPU** — *Runtime → Change runtime type → T4 GPU*. Training takes a
+   minute or two on a GPU and roughly twenty times that without one.
+3. **Run the setup cells.** They install what Colab lacks, download the support
+   files beside the notebook, and fetch the dataset.
+4. **Fill in the four cells marked `# YOUR CODE HERE`:**
+   - assemble `Encoder` and `Decoder` into a model, joined by the reparameterization
+   - write the loss from the two provided terms, returning `(loss, recon, kl)`
+   - call the training function, then plot the metrics it returns
+   - load the latent grid, decode it, and display it
+5. **Run the CHECK cell under each one.** Every check must print `[ok]`. A failure
+   names what was expected and what arrived — read the message, not the traceback.
+6. **Answer the markdown cells headed “Your answer.”** Two or three sentences each.
+7. **Run the whole notebook top to bottom and leave every output in place.** The
+   figures are the evidence; a notebook submitted with cleared outputs is read as
+   code alone.
+8. The last cell writes `vae.pt`. Keep it — the bonus notebook reads it.
+9. **Submit the `.ipynb`** with its outputs intact.
+
+## Completing the bonus notebook
+
+Run the main notebook to completion first: this one loads `vae.pt` and trains
+nothing. Keep both notebooks in the same directory.
+
+1. **Open, save a copy and select a GPU** as above, then run the setup cells.
+2. **Fill in the four cells marked `# YOUR CODE HERE`:**
+   - encode the dataset and scatter the latent points by label
+   - compute the per-class centroids, and lay an evenly spaced path through them
+   - decode every point on the path
+   - write the sequence out as an animated GIF and display it inline
+3. **Run the CHECK cell under each one**, and answer the “Your answer” cell.
+4. **Submit the `.ipynb` with its outputs intact, and the `.gif` beside it.**
+
+---
+
+## The helpers
+
 ```python
 from components import D_Z, SIGMA2, Encoder, Decoder
 from components import reconstruction_loss, kl_divergence, load_z_samples
