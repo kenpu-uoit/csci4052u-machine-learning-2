@@ -25,6 +25,7 @@ Graded work. Each one has its own README with the instructions and the mark brea
 | Assignment | Topic | Weight | Open |
 |---|---|---|---|
 | [ASSIGNMENT2](assignments/assignment2/) | Fine-tuning YOLOv3 on a New Dataset | 100 marks | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kenpu-uoit/csci4052u-machine-learning-2/blob/main/assignments/assignment2/assignment2.ipynb) |
+| [ASSIGNMENT3](assignments/assignment3/) | A Variational Autoencoder for MNIST | 100 + 20 bonus marks | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kenpu-uoit/csci4052u-machine-learning-2/blob/main/assignments/assignment3/assignment3.ipynb)<br>bonus [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kenpu-uoit/csci4052u-machine-learning-2/blob/main/assignments/assignment3/assignment3_bonus.ipynb) |
 
 Unlike the labs, an assignment may need a GPU runtime; its README says so.
 
