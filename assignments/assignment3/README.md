@@ -1,5 +1,9 @@
 # Assignment 3 — A Variational Autoencoder for MNIST
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kenpu-uoit/csci4052u-machine-learning-2/blob/main/assignments/assignment3/assignment3.ipynb) — the assignment
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kenpu-uoit/csci4052u-machine-learning-2/blob/main/assignments/assignment3/assignment3_bonus.ipynb) — the bonus notebook
+
 **CSCI 4052U — Machine Learning II**
 **Unit.** `chapter_17_variational_autoencoders` · **Builds on.** Chapter 12 (convolutions), Chapter 17 (the ELBO)
 **Weight.** 100 marks, plus 20 bonus · **Expected effort.** 1–2 hours

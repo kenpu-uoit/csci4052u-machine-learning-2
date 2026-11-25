@@ -1,5 +1,7 @@
 # Assignment 2 — Fine-tuning YOLOv3 on a New Dataset
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kenpu-uoit/csci4052u-machine-learning-2/blob/main/assignments/assignment2/assignment2.ipynb)
+
 **CSCI 4052U — Machine Learning II**
 **Unit.** `fast_object_detection_networks` · **Builds on.** Lab 3
 **Weight.** 100 marks · **Expected effort.** 2–3 hours, most of it reading output
